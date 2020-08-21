@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.SetExamQuestionController">
+   <children>
+      <Button fx:id="sub" layoutX="455.0" layoutY="552.0" mnemonicParsing="false" onAction="#submitQuestion" onMouseClicked="#click" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #23456e;" text="Submit" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow height="77.34" radius="36.6875" width="71.41" />
+         </effect>
+        </Button>
+      <Text fill="#23456e" layoutX="344.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Set  " wrappingWidth="142.13671875">
+         <font>
+            <Font name="Chiller" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="38.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="correct option" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="38.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="option a" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="38.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="option b" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="38.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="option c" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="29.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="619.0" layoutY="-2.0" prefHeight="617.0" prefWidth="233.0" style="-fx-background-color: #23456e;">
+         <children>
+            <Button layoutX="151.0" layoutY="48.0" mnemonicParsing="false" onAction="#backAction" style="-fx-background-color: white;">
+               <graphic>
+                  <ImageView fitHeight="47.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <Reflection fraction="0.68" topOpacity="0.23" />
+               </effect>
+            </Button>
+            <Text fill="#d3b149" layoutX="20.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":::::::Chirst Crest Computer Program" wrappingWidth="193.13671875">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+            <Text fill="#f6f7f8" layoutX="53.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="142.13671875">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="idText" layoutX="60.0" layoutY="229.0" prefHeight="25.0" prefWidth="133.0" />
+            <ImageView fitHeight="39.0" fitWidth="47.0" layoutX="169.0" layoutY="479.0">
+               <image>
+                  <Image url="@../images/icons8_Plus_100px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="189.0" fitWidth="165.0" layoutX="27.0" layoutY="309.0">
+               <image>
+                  <Image url="@../images/icons8_Exam_100px_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="question" layoutX="64.0" layoutY="100.0" prefHeight="98.0" prefWidth="529.0" />
+      <TextArea fx:id="correctOption" layoutX="64.0" layoutY="230.0" prefHeight="47.0" prefWidth="529.0" />
+      <TextArea fx:id="optionA" layoutX="64.0" layoutY="312.0" prefHeight="47.0" prefWidth="529.0" />
+      <TextArea fx:id="optionB" layoutX="58.0" layoutY="397.0" prefHeight="47.0" prefWidth="529.0" />
+      <TextArea fx:id="optionC" layoutX="58.0" layoutY="483.0" prefHeight="47.0" prefWidth="529.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="452.0" prefWidth="582.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.AddStudentController">
+   <children>
+      <AnchorPane layoutX="-7.0" prefHeight="452.0" prefWidth="337.0" style="-fx-background-color: #23456e;">
+         <children>
+            <TextField fx:id="regText" layoutX="76.0" layoutY="246.0" />
+            <TextField fx:id="nameText" layoutX="75.0" layoutY="178.0" />
+            <Button layoutX="216.0" layoutY="385.0" mnemonicParsing="false" onAction="#addStudentButton" prefHeight="29.0" prefWidth="100.0" text="Add Student" textFill="#23456e">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Text fill="#f5f2f2" layoutX="47.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class:" wrappingWidth="142.13671875">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f2f2" layoutX="41.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name:" wrappingWidth="232.13671875">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f2f2" layoutX="42.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Number:" wrappingWidth="269.13671875">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f2f2" layoutX="45.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Department:" wrappingWidth="183.13671875">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="classText" layoutX="75.0" layoutY="96.0" prefWidth="150.0" />
+            <ComboBox fx:id="departmentText" layoutX="82.0" layoutY="318.0" prefWidth="150.0" />
+            <Text fill="#f5f2f2" layoutX="219.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE" wrappingWidth="114.13671875">
+               <font>
+                  <Font name="Chiller" size="41.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f2f2" layoutX="266.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PROF" wrappingWidth="68.13671875">
+               <font>
+                  <Font name="Chiller" size="41.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="265.0" fitWidth="200.0" layoutX="355.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/school.png" />
+         </image>
+      </ImageView>
+      <Text fill="#23456e" layoutX="334.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Chiller" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="331.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ILE" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Chiller" size="41.0" />
+         </font>
+      </Text>
+      <Button layoutX="518.0" layoutY="49.0" mnemonicParsing="false" onAction="#backAction" style="-fx-background-color: white;">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <Reflection fraction="0.68" topOpacity="0.23" />
+         </effect>
+      </Button>
+      <Text fill="#d3b149" layoutX="9.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":::::::Chirst Crest Computer Program" wrappingWidth="193.13671875">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

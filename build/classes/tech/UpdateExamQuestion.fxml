@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="679.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="tech.UpdateExamQuestionController">
+   <children>
+      <Button layoutX="465.0" layoutY="562.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="27.0" prefWidth="132.0" style="-fx-background-color: #23456e;" text="Update" textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow height="77.34" radius="36.6875" width="71.41" />
+         </effect>
+      </Button>
+      <Text fill="#23456e" layoutX="245.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Question" wrappingWidth="211.13671875">
+         <font>
+            <Font name="Chiller" size="41.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="48.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="correct option" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="48.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="option a" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="48.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="option b" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="48.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="option c" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="#23456e" layoutX="39.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question" wrappingWidth="142.13671875">
+         <font>
+            <Font name="Century" size="21.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="questionArea" layoutX="74.0" layoutY="103.0" prefHeight="98.0" prefWidth="529.0" />
+      <TextArea fx:id="correctOptionArea" layoutX="74.0" layoutY="240.0" prefHeight="47.0" prefWidth="529.0" />
+      <TextArea fx:id="optionAArea" layoutX="74.0" layoutY="322.0" prefHeight="47.0" prefWidth="529.0" />
+      <TextArea fx:id="optionBArea" layoutX="68.0" layoutY="407.0" prefHeight="47.0" prefWidth="529.0" />
+      <TextArea fx:id="optionCArea" layoutX="68.0" layoutY="493.0" prefHeight="47.0" prefWidth="529.0" />
+      <Text fill="#23456e" layoutX="531.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="53.13671875">
+         <font>
+            <Font name="Chiller" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="idText" fill="#23456e" layoutX="570.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="53.13671875">
+         <font>
+            <Font name="Chiller" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
